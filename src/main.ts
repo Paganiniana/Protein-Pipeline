@@ -41,4 +41,4 @@ function fillTable() {
 // event listener
 button.addEventListener("click", fillTable);
 // set default
-input.value = NUCLEOTIDE_SEQUENCE_B;
+input.value = NUCLEOTIDE_SEQUENCE_A;
