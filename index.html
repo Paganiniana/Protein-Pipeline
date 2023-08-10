@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gene Translation</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="input-container">
+        <input id="input" type="text">
+        <button id="translate">convert</button>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Codon</th>  
+                <th>Protein</th>
+              </tr>
+            </thead>
+            <tbody id="output">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
