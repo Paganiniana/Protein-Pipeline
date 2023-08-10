@@ -137,7 +137,7 @@ function getNameByIndex(i:number):string {
  * @param {string} ns nucleotide sequence
  * @returns an array of [codon, protein]
  */
-export function nucleotideToProteinSequence(ns:string): string[][] {
+export function nucleotideToAminoAcidSequence(ns:string): string[][] {
     // 1. split into codons
     let codons = nucleotideToCodons(ns);
     

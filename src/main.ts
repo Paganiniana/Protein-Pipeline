@@ -1,6 +1,6 @@
 import './style.css'
 
-import { nucleotideToProteinSequence } from './code';
+import { nucleotideToAminoAcidSequence } from './code';
 
 const NUCLEOTIDE_SEQUENCE_A = "aguuguuaucgaaaacugcgaguaaauauccugagggcgcgaagcaacc";
 const NUCLEOTIDE_SEQUENCE_B = "aguuguaucgaaaacugcgaguaaauauccugagggcgcgaagcaacc";
@@ -15,7 +15,7 @@ const tbody = document.getElementById("output") as HTMLTableSectionElement;
 function fillTable() {
   let ns = input.value;
   /** @todo - error handling */
-  let res = nucleotideToProteinSequence(ns);
+  let res = nucleotideToAminoAcidSequence(ns);
 
   // clear table
   tbody.innerHTML = "";
